@@ -1,0 +1,7 @@
+tunnel: eyJhIjoiNjZiNGZmNDYwMzczYjNlN2Q5YzVkMzUxNDE1MTJkMjEiLCJ0IjoiYzMyOTg3YmItNGZiYS00NjY1LTk5YjctN2UzNzIzNGIzN2Q3IiwicyI6IlltRXhaak5pTnprdE1ERXlaUzAwTWpKbUxUa3hNVFV0TW1NNVlUQXdOamMyTTJKayJ9  # Используем ваш ID туннеля
+credentials-file: /etc/cloudflared/eyJhIjoiNjZiNGZmNDYwMzczYjNlN2Q5YzVkMzUxNDE1MTJkMjEiLCJ0IjoiYzMyOTg3YmItNGZiYS00NjY1LTk5YjctN2UzNzIzNGIzN2Q3IiwicyI6IlltRXhaak5pTnprdE1ERXlaUzAwTWpKbUxUa3hNVFV0TW1NNVlUQXdOamMyTTJKayJ9.json  # Путь к файлу с учетными данными
+
+ingress:
+  - hostname: eyJhIjoiNjZiNGZmNDYwMzczYjNlN2Q5YzVkMzUxNDE1MTJkMjEiLCJ0IjoiYzMyOTg3YmItNGZiYS00NjY1LTk5YjctN2UzNzIzNGIzN2Q3IiwicyI6IlltRXhaak5pTnprdE1ERXlaUzAwTWpKbUxUa3hNVFV0TW1NNVlUQXdOamMyTTJKayJ9.cfargotunnel.com  # Используем поддомен Cloudflare
+    service: http://localhost:8080  # Проксируем локальный сервис
+  - service: http_status:404  # Показываем 404, если нет маршрута
